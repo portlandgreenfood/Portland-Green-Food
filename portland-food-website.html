@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portland Food | Homemade Treats</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #fff8f0;
+      color: #2d211b;
+      line-height: 1.5;
+    }
+    header {
+      text-align: center;
+      padding: 55px 20px 45px;
+      background: #8b4a2f;
+      color: white;
+    }
+    header h1 { font-size: 42px; margin-bottom: 8px; }
+    header p { font-size: 18px; opacity: .92; }
+    main {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 45px 20px;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 35px;
+    }
+    .intro h2 { font-size: 30px; margin-bottom: 8px; }
+    .food-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .food-card {
+      background: white;
+      border-radius: 16px;
+      padding: 24px;
+      box-shadow: 0 5px 18px rgba(60, 35, 20, .10);
+      border: 1px solid #f0dfd0;
+    }
+    .food-card h3 {
+      font-size: 22px;
+      margin-bottom: 12px;
+    }
+    .price {
+      font-size: 20px;
+      font-weight: bold;
+      color: #8b4a2f;
+      margin-bottom: 5px;
+    }
+    .grams { color: #6d5a4f; }
+    .coming-soon {
+      opacity: .75;
+      position: relative;
+    }
+    .badge {
+      display: inline-block;
+      margin-top: 12px;
+      padding: 5px 10px;
+      border-radius: 20px;
+      background: #f2d5a7;
+      color: #70431e;
+      font-size: 13px;
+      font-weight: bold;
+    }
+    .custom {
+      margin-top: 45px;
+      background: #f4e1cf;
+      border-radius: 18px;
+      padding: 30px;
+      text-align: center;
+    }
+    .custom h2 { margin-bottom: 10px; }
+    .custom a {
+      display: inline-block;
+      margin-top: 16px;
+      padding: 12px 20px;
+      background: #8b4a2f;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: bold;
+    }
+    footer {
+      margin-top: 20px;
+      padding: 28px 20px;
+      text-align: center;
+      background: #2d211b;
+      color: white;
+    }
+    footer a {
+      color: #ffd39f;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .note {
+      margin-top: 8px;
+      font-size: 13px;
+      opacity: .7;
+    }
+    @media (max-width: 600px) {
+      header h1 { font-size: 34px; }
+      main { padding-top: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Portland Food</h1>
+    <p>Homemade food, treats &amp; custom orders</p>
+  </header>
+
+  <main>
+    <section class="intro">
+      <h2>Our Food</h2>
+      <p>Check out what's available and how many grams you get.</p>
+    </section>
+
+    <section class="food-grid">
+
+      <!-- Replace the example prices and grams below with your actual prices. -->
+
+      <div class="food-card">
+        <h3>🍫 Brownies</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🌈 Fairy Bread</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🍪 Cookies</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card coming-soon">
+        <h3>🍬 Gummies</h3>
+        <p class="price">Coming Soon</p>
+        <p class="grams">Grams: — g</p>
+        <span class="badge">COMING SOON</span>
+      </div>
+
+      <div class="food-card">
+        <h3>🍕 Pizza</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🎂 Cakes</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🧁 Cupcakes</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🥞 Pancakes</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+      <div class="food-card">
+        <h3>🥜 Pet Nut Butter &amp; Jam Sandwiches</h3>
+        <p class="price">$—</p>
+        <p class="grams">Grams: — g</p>
+      </div>
+
+    </section>
+
+    <section class="custom">
+      <h2>Custom Orders</h2>
+      <p>Want something different? Custom food orders can be made by request.</p>
+      <a href="mailto:portlandgreenfood@gmail.com">Email Us</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>Contact us on Snapchat: <a href="#">@portlandfood</a></p>
+    <p class="note">Prices and availability may vary for custom orders.</p>
+  </footer>
+
+</body>
+</html>
